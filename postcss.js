@@ -7,8 +7,9 @@ function getConfig(mq) {
                 url: 'rebase'
             }),
             require('postcss-mixins')(),
-            require('postcss-each')(),
             require('postcss-for')(),
+            require('postcss-each')(),
+            require('postcss-map')(),
             require('postcss-conditionals')(),
             require('postcss-custom-media')({
                 extensions: mq
