@@ -2,17 +2,18 @@ function getConfig(mq) {
     return {
         plugins: [
             require('postcss-import')(),
+            require('postcss-at-rules-variables')(),
             require('postcss-url')({
                 url: 'rebase'
             }),
             require('postcss-mixins')(),
-            require('postcss-for')(),
             require('postcss-each')(),
+            require('postcss-for')(),
+            require('postcss-conditionals')(),
             require('postcss-custom-media')({
                 extensions: mq
             }),
             require('postcss-custom-properties')(),
-            require('postcss-at-rules-variables')(),
             require('postcss-calc')(),
             require('postcss-nested')(),
             require('autoprefixer')({
