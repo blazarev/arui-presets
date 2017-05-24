@@ -12,6 +12,7 @@ function getConfig(mq) {
                 extensions: mq
             }),
             require('postcss-custom-properties')(),
+            require('postcss-at-rules-variables')(),
             require('postcss-calc')(),
             require('postcss-nested')(),
             require('autoprefixer')({
