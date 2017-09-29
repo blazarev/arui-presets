@@ -30,13 +30,11 @@ module.exports = {
             },
             {
                 test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-                loader: 'url-loader',
-                options: Object.assign({ mimetype: 'application/font-woff' }, ASSETS_BASE_QUERY)
+                loader: 'file-loader'
             },
             {
                 test: /\.(ttf)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-                loader: 'url-loader',
-                options: Object.assign({ mimetype: 'application/octet-stream' }, ASSETS_BASE_QUERY)
+                loader: 'file-loader'
             },
             {
                 test: /\.(eot)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
