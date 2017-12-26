@@ -60,6 +60,10 @@ module.exports = {
         'no-unused-expressions': 0,
         'prefer-arrow-callback': 0,
         'prefer-const': 0,
+        'prefer-destructuring': [2,
+            { array: false, object: true },
+            { enforceForRenamedProperties: false }
+        ],
         'react/jsx-boolean-value': [2, 'always'],
         'react/jsx-curly-spacing': [2, 'always'],
         'react/jsx-filename-extension': [2, { extensions: ['.jsx'] }],
